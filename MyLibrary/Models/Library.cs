@@ -15,10 +15,14 @@ namespace MyLibrary.Models
 
         public string Address { get; set; }
 
+        [Display (Name = "Open")]
         public string OpenHour { get; set; }
 
+        [Display (Name = "Close")]
         public string CloseHour { get; set; }
 
         public virtual ICollection<Book> Books { get; set; }
+
+        //public virtual ICollection<Patron> Patrons { get; set; }
     }
 }

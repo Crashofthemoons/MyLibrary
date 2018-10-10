@@ -18,11 +18,17 @@ namespace MyLibrary.Models
 
         public string ISBN { get; set; }
 
+        [Display (Name = "Checked Out")]
         public bool CheckedOut { get; set; }
 
         [Display (Name ="Library")]
         public int LibraryId { get; set; }
 
         public Library Library { get; set; }
+
+        [Display(Name = "Patron")]
+        public int? PatronId { get; set; }
+
+        public Patron Patron { get; set; }
     }
 }

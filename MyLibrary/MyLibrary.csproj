@@ -7,6 +7,22 @@
   <ItemGroup>
     <Compile Remove="Migrations\20181010151506_Initial.cs" />
     <Compile Remove="Migrations\20181010151506_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20181010185959_Patron.cs" />
+    <Compile Remove="Migrations\20181010185959_Patron.Designer.cs" />
+    <Compile Remove="Migrations\20181010192247_patron2.cs" />
+    <Compile Remove="Migrations\20181010192247_patron2.Designer.cs" />
+    <Compile Remove="Migrations\20181010192940_patron3.cs" />
+    <Compile Remove="Migrations\20181010192940_patron3.Designer.cs" />
+    <Compile Remove="Migrations\20181010194427_patron5.cs" />
+    <Compile Remove="Migrations\20181010194427_patron5.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
