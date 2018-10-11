@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyLibrary.Data;
 using MyLibrary.Models;
+using MyLibrary.ViewModels;
 
 namespace MyLibrary.Controllers
 {
@@ -82,8 +83,11 @@ namespace MyLibrary.Controllers
             {
                 return NotFound();
             }
-            ViewData["LibraryId"] = new SelectList(_context.Library, "LibraryId", "LibraryId", patron.LibraryId);
-            return View(patron);
+            //ViewData["LibraryId"] = new SelectList(_context.Library, "LibraryId", "LibraryId", patron.LibraryId);
+
+            PatronEditViewModel patronEditViewModel = new PatronEditViewModel(_context);
+            patronEditViewModel.Patron = patron;
+            return View(patronEditViewModel);
         }
 
         // POST: Patrons/Edit/5
